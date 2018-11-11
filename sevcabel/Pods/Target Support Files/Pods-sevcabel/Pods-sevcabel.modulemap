@@ -1,0 +1,6 @@
+framework module Pods_sevcabel {
+  umbrella header "Pods-sevcabel-umbrella.h"
+
+  export *
+  module * { export * }
+}

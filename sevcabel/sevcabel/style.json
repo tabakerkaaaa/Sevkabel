@@ -1,0 +1,45 @@
+[
+  {
+  "elementType": "labels",
+  "stylers": [
+              {
+              "visibility": "off"
+              }
+              ]
+  },
+  {
+  "featureType": "landscape.man_made",
+  "elementType": "geometry",
+  "stylers": [
+              {
+              "hue": "#ff0000"
+              }
+              ]
+  },
+  {
+  "featureType": "landscape.man_made",
+  "elementType": "geometry.fill",
+  "stylers": [
+              {
+              "hue": "#fee17f"
+              },
+              {
+              "saturation": 45
+              },
+              {
+              "lightness": -20
+              },
+              {
+              "visibility": "on"
+              }
+              ]
+  },
+  {
+  "featureType": "water",
+  "stylers": [
+              {
+              "color": "#2b3990"
+              }
+              ]
+  }
+]
