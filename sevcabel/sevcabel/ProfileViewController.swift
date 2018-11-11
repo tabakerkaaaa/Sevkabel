@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SwiftyVK
+//import SwiftyVK
 import  Firebase
 import FirebaseDatabase
 //import VK_ios_sdk

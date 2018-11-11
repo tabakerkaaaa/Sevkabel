@@ -37,7 +37,7 @@ class VkHandler: SwiftyVKDelegate {
     func logIn(onSuccess: @escaping () -> Void,
                onError: @escaping (_ e: Error) -> Void) {
         getSession()
-        print(self.sessionId, "📪")
+        //print(self.sessionId, "📪")
         if(self.sessionId == nil) {
             VK.sessions.default.logIn(
                 onSuccess: { _ in
@@ -66,20 +66,20 @@ class VkHandler: SwiftyVKDelegate {
         //addSession()
         self.ref.child("vk_token").setValue(sessionId)
         self.sessionId = sessionId
-        print(self.sessionId, "created")
+        //print(self.sessionId, "created")
     }
     
     func vkTokenUpdated(for sessionId: String, info: [String : String]) {
         //addSession()
         self.ref.child("vk_token").setValue(sessionId)
         self.sessionId = sessionId
-        print(self.sessionId, "updated")
+        //print(self.sessionId, "updated")
     }
     
     func vkTokenRemoved(for sessionId: String) {
         self.ref.child("vk_token").setValue("")
         self.sessionId = nil
-        print(self.sessionId, "removed")
+        //print(self.sessionId, "removed")
     }
     
     func getSession(){
