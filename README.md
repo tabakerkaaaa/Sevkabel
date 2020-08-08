@@ -1,1 +1,1 @@
-# hackathon2018-sevcable
+# SevcableHackathon2018
