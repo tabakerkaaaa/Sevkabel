@@ -10,7 +10,6 @@ target 'sevcabel' do
   pod 'SwiftyJSON'
   pod 'GoogleMaps'
   pod 'CVCalendar', '~> 1.6.1'
-  #pod 'VK-ios-sdk'
   # Pods for sevcabel
 
 end

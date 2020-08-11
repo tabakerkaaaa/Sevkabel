@@ -22,13 +22,5 @@ class HistoryCell: UITableViewCell {
         reviewButton.layer.cornerRadius = 5
         reviewButton.layer.borderWidth = 1
         reviewButton.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
 }

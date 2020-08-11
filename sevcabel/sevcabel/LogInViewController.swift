@@ -8,29 +8,19 @@
 
 import UIKit
 import SwiftyVK
-//import VK_ios_sdk
 
 class LogInViewController: UIViewController {
     var vkHandler: VkHandler?
     @IBOutlet weak var logInButton: UIButton!
     @IBAction func logInButton(_ sender: Any) {
         
-        /*vkHandler?.logIn(onSuccess: {
-            self.performSegue(withIdentifier: "fromLogInView", sender: sender)
+        vkHandler?.logIn(onSuccess: {
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "fromLogInView", sender: sender)
+            }
         }, onError: { (error: Error) in
             print(error.localizedDescription)
-        })*/
-        /*VK.sessions.default.logOut()
-        
-        VK.sessions.default.logIn(
-            onSuccess: { _ in
-                self.performSegue(withIdentifier: "fromLogInView", sender: sender)
-        },
-            onError: { error in
-                print(error.localizedDescription)
-        })*/
-        self.performSegue(withIdentifier: "fromLogInView", sender: sender)
-        //VKSdk.authorize([])*/
+        })
     }
     
 
@@ -45,24 +35,10 @@ class LogInViewController: UIViewController {
         logInButton.layer.cornerRadius = 10
         statusBarView.backgroundColor = statusBarColor
         view.addSubview(statusBarView)
-        //vkHandler = VkHandler()
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        vkHandler = VkHandler()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        segue.destination.modalPresentationStyle = .fullScreen
     }
-    */
-
 }

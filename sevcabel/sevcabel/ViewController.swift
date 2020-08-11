@@ -21,14 +21,6 @@ class ViewController: UIViewController {
         let statusBarColor = #colorLiteral(red: 0, green: 0.242123574, blue: 0.5712447166, alpha: 1)
         statusBarView.backgroundColor = statusBarColor
         view.addSubview(statusBarView)
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
